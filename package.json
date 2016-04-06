@@ -3,7 +3,8 @@
   "description": "A project to fiddle around with a lot of stuff ...",
   "main": "index.js",
   "scripts": {
-    "install": "echo \"INVOKED INSTALL\"; echo $(which opt); echo $PATH; opt --out FOO --exec \"echo 'NOT OPTED OUT OF THIS OUTPUT'\"; echo \"FINISHED INSTALL\"",
+    "test-install": "echo \"INVOKED INSTALL\"; echo $(which opt); echo $PATH; opt --out FOO --exec \"echo 'NOT OPTED OUT OF THIS OUTPUT'\"; echo \"FINISHED INSTALL\"",
+    "install": "echo \"INVOKED INSTALL\"; opt --out FOO --exec \"echo 'NOT OPTED OUT OF THIS OUTPUT'\"; echo \"FINISHED INSTALL\"",
     "test": "echo \"TEST HERE\"",
     "semantic-release": "echo \"RELEASING WOULD NOW OCCURR!\"",
     "semantic-release-the-real-thing": "semantic-release pre && npm publish && semantic-release post"
