@@ -1,0 +1,27 @@
+{
+  "name": "multipurpose-fiddle-project",
+  "description": "A project to fiddle around with a lot of stuff ...",
+  "main": "index.js",
+  "scripts": {
+    "install": "echo \"INVOKED INSTALL\"; opt --out FOO --exec echo \"NOT OPTED OUT OF THIS OUTPUT\"; echo \"FINISHED INSTALL\"",
+    "test": "echo \"TEST HERE\"",
+    "semantic-release": "echo \"RELEASING WOULD NOW OCCURR!\"",
+    "semantic-release-the-real-thing": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ta2edchimp/multipurpose-fiddle-project.git"
+  },
+  "author": "Andreas Windt <email@andreaswindt.com> (http://andreaswindt.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ta2edchimp/multipurpose-fiddle-project/issues"
+  },
+  "homepage": "https://github.com/ta2edchimp/multipurpose-fiddle-project#readme",
+  "private": true,
+  "devDependencies": {
+    "ghooks": "^1.2.0",
+    "opt-cli": "^1.4.0",
+    "semantic-release": "^4.3.5"
+  }
+}
